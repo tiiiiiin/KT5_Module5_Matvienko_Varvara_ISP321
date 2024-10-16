@@ -9,6 +9,14 @@
       Title="ИС по прокату спортивного инвентаря - добавление работника">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Click="CancelButton_Click"></Button>
+            <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Right" Click="SaveButton_Click"></Button>
+        </Grid>
     </Grid>
 </Page>

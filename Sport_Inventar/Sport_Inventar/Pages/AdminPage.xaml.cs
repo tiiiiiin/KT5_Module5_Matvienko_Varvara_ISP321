@@ -24,5 +24,18 @@ namespace Sport_Inventar.Pages
         {
             InitializeComponent();
         }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AddUserPage());
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (Classes.Manager.MainFrame.CanGoBack)
+            {
+                Classes.Manager.MainFrame.GoBack();
+            }
+        }
     }
 }

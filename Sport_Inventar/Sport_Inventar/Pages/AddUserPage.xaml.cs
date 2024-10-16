@@ -23,6 +23,21 @@ namespace Sport_Inventar.Pages
         public AddUserPage()
         {
             InitializeComponent();
+            LoadComboBox();
+        }
+        private void LoadComboBox()
+        {
+
+        }
+
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            Classes.Manager.MainFrame.Navigate(new Pages.AdminPage());
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
