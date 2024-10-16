@@ -23,8 +23,12 @@ namespace Sport_Inventar.Pages
         public UserViewPage()
         {
             InitializeComponent();
+            Init();
         }
-
+        public void Init()
+        {
+            UserListView.ItemsSource = Data.text1Entities.GetContext().User.ToList();
+        }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             if (Classes.Manager.MainFrame.CanGoBack)

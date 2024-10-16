@@ -17,12 +17,12 @@ namespace Sport_Inventar.Data
     {
         private static text1Entities _context;
         public text1Entities()
-            : base("name=text1Entities")
+                    : base("name=text1Entities")
         {
         }
         public static text1Entities GetContext()
         {
-            if(_context == null)
+            if (_context == null)
             {
                 _context = new text1Entities();
             }

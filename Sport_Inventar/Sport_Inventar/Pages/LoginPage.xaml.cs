@@ -44,13 +44,35 @@ namespace Sport_Inventar.Pages
                     return;
                 }
 
-                //Data.text1Entities.GetContext().User.Any(d => d.UserLogin == LoginTexBox.Text && d.UserPassword == PasswordBox.Password)
-                //if()
+                
+                if(Data.text1Entities.GetContext().User.Any(d => d.UserLogin == LoginTexBox.Text && d.UserPassword == PasswordBox.Password))
+                {
+                    var user = Data.text1Entities.GetContext().User.Where(d => d.UserLogin == LoginTexBox.Text && d.UserPassword == PasswordBox.Password).FirstOrDefault();
+                    Classes.Manager.CurrentUser = user;
+                    switch (user.Role.Name)
+                    {
+                        case "Администратор":
+                            Classes.Manager.MainFrame.Navigate(new Pages.AdminPage());
+                            break;
+                        case "Исполнитель":
+                            Classes.Manager.MainFrame.Navigate(new Pages.UserViewPage());
+                            break;
+                        case "Менеджер":
+                            Classes.Manager.MainFrame.Navigate(new Pages.UserViewPage());
+                            break;
+                    }
+                    MessageBox.Show("Успех", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.ToString(), "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

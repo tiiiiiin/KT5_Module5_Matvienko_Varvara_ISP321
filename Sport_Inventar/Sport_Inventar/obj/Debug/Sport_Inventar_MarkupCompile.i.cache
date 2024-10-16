@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\comcuru\Desktop\Sport_Inventar\Sport_Inventar\obj\Debug\
+C:\Users\comcuru\Desktop\KT5_Module5\Sport_Inventar\Sport_Inventar\obj\Debug\
 Sport_Inventar
 none
 false
 DEBUG;TRACE
-C:\Users\comcuru\Desktop\Sport_Inventar\Sport_Inventar\App.xaml
+C:\Users\comcuru\Desktop\KT5_Module5\Sport_Inventar\Sport_Inventar\App.xaml
 5-344350939
 2-1716197397
 19-788121425
-18-2093431098
+18-1693944947
 MainWindow.xaml;Pages\AddUserPage.xaml;Pages\AdminPage.xaml;Pages\LoginPage.xaml;Pages\UserViewPage.xaml;
 
-True
+False
 

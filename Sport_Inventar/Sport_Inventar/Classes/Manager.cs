@@ -9,7 +9,7 @@ namespace Sport_Inventar.Classes
 {
     class Manager
     {
-        public Data.User CurrentUser { get; set; }
+        public static Data.User CurrentUser { get; set; }
         public static Frame MainFrame { get; set; }
     }
 }

@@ -23,8 +23,8 @@ namespace Sport_Inventar.Data
         public string UserLogin { get; set; }
         public string UserPassword { get; set; }
         public string UserPhoneNum { get; set; }
-        public int UserSeriaPass { get; set; }
-        public int UserNumPass { get; set; }
+        public Nullable<int> UserSeriaPass { get; set; }
+        public Nullable<int> UserNumPass { get; set; }
         public System.DateTime DateOfBirth { get; set; }
         public Nullable<System.DateTime> DateLastEnter { get; set; }
         public Nullable<int> IdTypeEnter { get; set; }

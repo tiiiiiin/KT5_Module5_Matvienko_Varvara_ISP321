@@ -5,15 +5,62 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Sport_Inventar.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="1000"
       Title="ИС по прокату спортивного инвентаря - добавление работника">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="70"></RowDefinition>
         </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="120"></ColumnDefinition>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="250"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
 
+            </Grid.RowDefinitions>
+            <Label Content="Фамилия" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Имя" Grid.Row="1"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Отчество" Grid.Row="2"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Email" Grid.Row="3"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Номер телефона" Grid.Row="4"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Дата Рождения" Grid.Row="5"  Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+
+            <Label Content="Login" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Пароль" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Повторение пароля" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Пол" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+            <Label Content="Выберите роль" Grid.Row="4" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="10"></Label>
+
+
+            <TextBox x:Name="LastNameTextBox"  Grid.Row="0" Grid.Column="1" Width="240" Margin="10"></TextBox>
+            <TextBox x:Name="FirstNameTextBox"  Grid.Row="1" Grid.Column="1" Width="240" Margin="10"></TextBox>
+            <TextBox x:Name="PatronymicNameTextBox"  Grid.Row="2" Grid.Column="1" Width="240" Margin="10"></TextBox>
+            <TextBox x:Name="EmailTextBox"  Grid.Row="3" Grid.Column="1" Width="240" Margin="10" ></TextBox>
+            <TextBox x:Name="PhoneMubTextBox"  Grid.Row="4" Grid.Column="1" Width="240" Margin="10"></TextBox>
+            <DatePicker x:Name="DatePicker"  Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="250" Margin="10"></DatePicker>
+
+            <TextBox x:Name="LoginTextBox"  Grid.Row="0" Grid.Column="3" Width="240" Margin="10"></TextBox>
+            <PasswordBox x:Name="PasswordBox"  Grid.Row="1" Grid.Column="3" Width="240" Margin="10"></PasswordBox>
+            <PasswordBox x:Name="RePasswordBox"  Grid.Row="2" Grid.Column="3" Width="240" Margin="10"></PasswordBox>
+
+            <ComboBox x:Name="GenderComboBox"  Grid.Row="3" Grid.Column="3" Width="240" Height="30" DisplayMemberPath="Name" Margin="10"></ComboBox>
+            <ComboBox x:Name="RoleComboBox"  Grid.Row="4" Grid.Column="3" Width="240" Height="30" DisplayMemberPath="Name" Margin="10"></ComboBox>
+
+
+
+
+        </Grid>
         <Grid Grid.Row="1">
             <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Click="CancelButton_Click"></Button>
             <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Right" Click="SaveButton_Click"></Button>

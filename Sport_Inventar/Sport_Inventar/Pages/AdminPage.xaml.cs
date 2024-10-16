@@ -23,6 +23,12 @@ namespace Sport_Inventar.Pages
         public AdminPage()
         {
             InitializeComponent();
+            Init();
+        }
+
+        public void Init()
+        {
+            UserListView.ItemsSource = Data.text1Entities.GetContext().User.ToList();
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

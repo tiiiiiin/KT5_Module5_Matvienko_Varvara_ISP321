@@ -49,8 +49,6 @@
             <PropertyRef Name="UserLogin" />
             <PropertyRef Name="UserPassword" />
             <PropertyRef Name="UserPhoneNum" />
-            <PropertyRef Name="UserSeriaPass" />
-            <PropertyRef Name="UserNumPass" />
             <PropertyRef Name="DateOfBirth" />
             <PropertyRef Name="IdGender" />
           </Key>
@@ -63,8 +61,8 @@
           <Property Name="UserLogin" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserPassword" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserPhoneNum" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="UserSeriaPass" Type="int" Nullable="false" />
-          <Property Name="UserNumPass" Type="int" Nullable="false" />
+          <Property Name="UserSeriaPass" Type="int" />
+          <Property Name="UserNumPass" Type="int" />
           <Property Name="DateOfBirth" Type="date" Nullable="false" />
           <Property Name="DateLastEnter" Type="datetime" />
           <Property Name="IdTypeEnter" Type="int" />
@@ -193,8 +191,6 @@
             <PropertyRef Name="UserLogin" />
             <PropertyRef Name="UserPassword" />
             <PropertyRef Name="UserPhoneNum" />
-            <PropertyRef Name="UserSeriaPass" />
-            <PropertyRef Name="UserNumPass" />
             <PropertyRef Name="DateOfBirth" />
             <PropertyRef Name="IdGender" />
           </Key>
@@ -207,8 +203,8 @@
           <Property Name="UserLogin" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UserPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UserPhoneNum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="UserSeriaPass" Type="Int32" Nullable="false" />
-          <Property Name="UserNumPass" Type="Int32" Nullable="false" />
+          <Property Name="UserSeriaPass" Type="Int32" />
+          <Property Name="UserNumPass" Type="Int32" />
           <Property Name="DateOfBirth" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="DateLastEnter" Type="DateTime" Precision="3" />
           <Property Name="IdTypeEnter" Type="Int32" />
